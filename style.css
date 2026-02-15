@@ -1,0 +1,76 @@
+/* 全体の基本設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5; /* 少しグレーにして白背景のボタンを際立たせる */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* コンテンツの幅制限 */
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* タイトル */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #007bff;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* ツールリストのスタイル */
+.tool-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.tool-list li {
+    margin-bottom: 15px;
+}
+
+/* リンクをボタン形式にする */
+.tool-list a {
+    display: block;
+    padding: 20px; /* スマホでタップしやすい高さ */
+    background-color: #ffffff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.1s, background-color 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+/* 押した時の反応（フィードバック） */
+.tool-list a:active {
+    transform: scale(0.98);
+    background-color: #f8f9fa;
+}
+
+/* PCでのホバー時 */
+@media (hover: hover) {
+    .tool-list a:hover {
+        background-color: #eef6ff;
+        border-color: #007bff;
+    }
+}
